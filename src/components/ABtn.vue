@@ -4,21 +4,7 @@
   </button>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'ABtn'
-})
-</script>
-
-<style>
-:root {
-  --primary: #25d0bc;
-  --primary-text: #181925;
-  --background: #181925;
-}
-
+<style scoped>
 button {
   outline: none;
   border: none;
@@ -31,8 +17,6 @@ button {
   -webkit-appearance: button;
 }
 .a-btn {
-  background: var(--primary);
-  color: var(--background);
   padding: 8px 16px;
   border-radius: 2px;
 }
