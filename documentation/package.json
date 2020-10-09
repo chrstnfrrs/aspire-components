@@ -1,0 +1,14 @@
+{
+  "name": "aspire-components-documentation",
+  "version": "0.0.1",
+  "description": "Documentation for Aspire Components",
+  "author": "chrstnfrrs",
+  "license": "MIT",
+  "scripts": {
+    "dev:docs": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress-next": "^0.13.0"
+  }
+}

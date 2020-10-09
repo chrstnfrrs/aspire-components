@@ -15,7 +15,8 @@
     "*.json"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
+    "dev:docs": "cd documentation && yarn && yarn dev:docs",
     "lint": "vue-cli-service lint",
     "build": "rollup -c --environment BUILD:production"
   },
@@ -42,6 +43,7 @@
     "rollup": "^2.29.0",
     "rollup-plugin-css-only": "^2.1.0",
     "rollup-plugin-postcss": "^3.1.8",
-    "rollup-plugin-vue": "^6.0.0-beta.10"
+    "rollup-plugin-vue": "^6.0.0-beta.10",
+    "vuepress-next": "^0.13.0"
   }
 }

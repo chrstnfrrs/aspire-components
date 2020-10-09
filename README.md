@@ -1,24 +1,11 @@
 # aspire-components
 
-## Project setup
-```
-npm install
-```
+## Aspire Components Dev Commands
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Install dependencies: `yarn`
+Run developer playground application: `yarn dev`
+Run documentation: `yarn dev:docs`
+Build package for publishing: `yarn build`
+Lint: `yarn lint`
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Will run documentation/playground applications at `http://localhost:8080/`
