@@ -1,7 +1,7 @@
 import vue from 'rollup-plugin-vue'
 import postcss from 'rollup-plugin-postcss'
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
+import { nodeResolve } from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
 
 export default [
   // ESM build to be used with webpack/rollup.
@@ -12,9 +12,9 @@ export default [
       file: 'dist/aspire-components.esm.js'
     },
     plugins: [
-      vue({css: false}),
+      vue({ css: false }),
       postcss({
-        modules: true,
+        modules: true
       }),
       nodeResolve(),
       commonjs({
@@ -32,7 +32,7 @@ export default [
     plugins: [
       vue({ css: false, template: { optimizeSSR: true } }),
       postcss({
-        modules: true,
+        modules: true
       }),
       nodeResolve(),
       commonjs({
@@ -48,9 +48,9 @@ export default [
       file: 'dist/aspire-components.js'
     },
     plugins: [
-      vue({css: false}),
+      vue({ css: false }),
       postcss({
-        modules: true,
+        modules: true
       }),
       nodeResolve(),
       commonjs({

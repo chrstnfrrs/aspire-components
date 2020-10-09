@@ -4,7 +4,13 @@
   "private": false,
   "description": "Aspire Components, an intuitive component library for Vue3",
   "author": "Christian Farris",
-  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve",
+    "dev:docs": "cd documentation && yarn && yarn dev:docs"
+  },
   "main": "./dist/aspire-components.ssr.js",
   "module": "./dist/aspire-components.esm.js",
   "browser": "./dist/aspire-components.js",
@@ -14,13 +20,8 @@
     "src/*",
     "*.json"
   ],
-  "scripts": {
-    "dev": "vue-cli-service serve",
-    "dev:docs": "cd documentation && yarn && yarn dev:docs",
-    "lint": "vue-cli-service lint",
-    "build": "rollup -c --environment BUILD:production"
-  },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
     "core-js": "^3.6.5",
     "vue": "^3.0.0-0"
   },
@@ -29,9 +30,11 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0-0",
     "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/test-utils": "^2.0.0-0",
     "cross-env": "^5.2.0",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
@@ -44,6 +47,9 @@
     "rollup-plugin-css-only": "^2.1.0",
     "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-vue": "^6.0.0-beta.10",
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0",
     "vuepress-next": "^0.13.0"
-  }
+  },
+  "license": "MIT"
 }
