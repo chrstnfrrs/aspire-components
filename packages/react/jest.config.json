@@ -1,0 +1,10 @@
+{
+  "roots": ["./src/tests"],
+  "testRegex": "((\\.|/*.)(spec))\\.tsx?$",
+  "verbose": true,
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "moduleFileExtensions": ["ts", "tsx", "js"],
+  "testPathIgnorePatterns": ["node_modules/", "build/"]
+}
