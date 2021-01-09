@@ -4,7 +4,7 @@
   "description": "Aspire Components for React",
   "author": "chrstnfrrs",
   "license": "MIT",
-  "repository": "chrstnfrrs/aspire-components",
+  "repository": "https://github.com/chrstnfrrs/aspire-components",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
