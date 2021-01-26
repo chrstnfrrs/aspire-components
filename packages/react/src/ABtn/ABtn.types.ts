@@ -1,3 +1,4 @@
 export interface ABtnProps {
-  text: String
+  justify?: String,
+  align?: String,
 }
