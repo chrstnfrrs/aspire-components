@@ -15,9 +15,7 @@
   "devDependencies": {
     "rollup": "^2.38.0",
     "rollup-plugin-bundle-scss": "^0.1.2",
-    "rollup-plugin-postcss": "^4.0.0"
-  },
-  "dependencies": {
+    "rollup-plugin-postcss": "^4.0.0",
     "path": "^0.12.7"
   }
 }
