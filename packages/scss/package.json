@@ -1,0 +1,23 @@
+{
+  "name": "aspire-components-scss",
+  "version": "1.0.0",
+  "description": "Aspire Components Helper Functions",
+  "author": "chrstnfrrs",
+  "license": "MIT",
+  "repository": "https://github.com/chrstnfrrs/aspire-components",
+  "main": "build/index.scss",
+  "source": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "rollup": "^2.38.0",
+    "rollup-plugin-bundle-scss": "^0.1.2",
+    "rollup-plugin-postcss": "^4.0.0"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
