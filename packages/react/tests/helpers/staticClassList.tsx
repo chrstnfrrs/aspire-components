@@ -4,32 +4,32 @@ import Chance from 'chance'
 
 const chance = new Chance();
 
-export const testWithProp = (Component, func, propertyField) => {
+export const testWithProp = (Component, method, field) => {
   const expectedClassName = chance.word()
-  func.mockReturnValue([expectedClassName])
+  method.mockReturnValue([expectedClassName])
 
   const dynamicProps = {}
   const expectedProp = chance.word()
-  dynamicProps[propertyField] = expectedProp
+  dynamicProps[field] = expectedProp
   
   const {container} = RTL.render(<Component {...dynamicProps} />)
   const node: any = container.firstChild
   const hasClass = node.classList.contains(expectedClassName)
 
-  expect(func).toHaveBeenCalledTimes(1);
-  expect(func).toHaveBeenCalledWith(expectedProp);
+  expect(method).toHaveBeenCalledTimes(1);
+  expect(method).toHaveBeenCalledWith(expectedProp);
   expect(hasClass).toBe(true)
 }
 
-export const testWithNoProp = (Component, func) => {
+export const testWithNoProp = (Component, method) => {
   const expectedClassName = chance.word()
-  func.mockReturnValue([])
+  method.mockReturnValue([])
 
   const {container} = RTL.render(<Component />)
   const node: any = container.firstChild
   const hasClass = node.classList.contains(expectedClassName)
 
-  expect(func).toHaveBeenCalledTimes(1);
-  expect(func).toHaveBeenCalledWith(undefined);
+  expect(method).toHaveBeenCalledTimes(1);
+  expect(method).toHaveBeenCalledWith(undefined);
   expect(hasClass).toBe(false)
 }
