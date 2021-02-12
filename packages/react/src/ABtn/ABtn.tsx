@@ -9,8 +9,8 @@ import './ABtn.scss'
 const ABtn: React.FC<ABtnProps> = (props) => {
   const classList = [
     'a-btn',
-    ...isJustifiable(props.justify),
-    ...isAlignable(props.align),
+    isJustifiable(props.justify),
+    isAlignable(props.align),
   ]
 
   return <button className={classList.join(' ')}>{props.children}</button>
