@@ -7,4 +7,4 @@ const justify = {
   around: 'justify-around',
 }
 
-export const isJustifiable = (type) => justify[type] ? [justify[type]] : []
+export const isJustifiable = (type) => justify[type]
