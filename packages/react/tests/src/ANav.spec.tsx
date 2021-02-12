@@ -1,25 +1,38 @@
+import React from 'react'
+import * as RTL from '@testing-library/react'
+import Chance from 'chance'
+
 import ANav from '../../src/ANav/ANav'
 import { alignable, justifiable } from '../enums/staticClasses';
 import { testWithProp, testWithNoProp } from '../helpers/staticClassList';
 
 jest.mock('aspire-components-helpers')
 
+const chance = new Chance()
+
 const staticClassList = [
   justifiable,
   alignable,
 ]
 
-describe('ABtn', () => {
+describe('ANav', () => {
+
   beforeEach(() => {
     staticClassList.forEach(({method}) => method.mockReturnValue([]))
   });
 
-  describe('asdf', () => {
-    test('should asdf', () => {
-      expect(true).toBe(true)
-    });
-  });
   afterEach(jest.resetAllMocks);
+  
+  test('should have className', () => {
+    const expectedClassName = chance.word()
+    
+    const {container} = RTL.render(<ANav className={expectedClassName} />)
+    const node: any = container.firstChild
+    const hasClass = node.classList.contains(expectedClassName)
+    
+    expect(hasClass).toBe(true)
+  });
+
   describe('add static class to classlist', () => {
     describe('has prop', () => {
       test.each([...staticClassList])('should get classlist containing class from %p', (value) => {
