@@ -1,4 +1,5 @@
 import React from 'react'
+import clsx from 'clsx';
 
 import {isJustifiable, isAlignable} from 'aspire-components-helpers'
 import 'aspire-components-scss/build/index.scss'
@@ -13,7 +14,7 @@ const ABtn: React.FC<ABtnProps> = (props) => {
     isAlignable(props.align),
   ]
 
-  return <button className={classList.join(' ')}>{props.children}</button>
+  return <button className={clsx(props.className, classList)}>{props.children}</button>
 }
 
 export default ABtn

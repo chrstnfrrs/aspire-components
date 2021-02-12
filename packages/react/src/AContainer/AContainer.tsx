@@ -1,4 +1,5 @@
 import React from 'react'
+import clsx from 'clsx';
 
 import {isJustifiable, isAlignable} from 'aspire-components-helpers'
 import 'aspire-components-scss/build/index.scss'
@@ -13,7 +14,7 @@ const AContainer: React.FC<AContainerProps> = (props) => {
     isAlignable(props.align),
   ]
 
-  return <div className={classList.join(' ')}>{props.children}</div>
+  return <div className={clsx(props.className, classList)}>{props.children}</div>
 }
 
 export default AContainer
