@@ -5,6 +5,10 @@ import typescript from "rollup-plugin-typescript2";
 
 const packageJson = require("./package.json");
 
+const globals = {
+  ...packageJson.devDependencies,
+};
+
 export default {
   input: "src/index.ts",
   output: [
@@ -23,6 +27,11 @@ export default {
     peerDepsExternal(),
     resolve(),
     commonjs(),
-    typescript({ useTsconfigDeclarationDir: true })
-  ]
+    typescript({ useTsconfigDeclarationDir: true }),
+    commonjs({
+      exclude: 'node_modules',
+      ignoreGlobal: true,
+    }),
+  ],
+  external: Object.keys(globals),
 };
