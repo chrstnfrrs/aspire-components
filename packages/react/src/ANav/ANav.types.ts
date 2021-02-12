@@ -1,4 +1,5 @@
 export interface ANavProps {
-  justify?: String,
   align?: String,
+  className?: String,
+  justify?: String,
 }

@@ -1,4 +1,5 @@
 export interface AContainerProps {
-  justify?: String,
   align?: String,
+  className?: String,
+  justify?: String,
 }
