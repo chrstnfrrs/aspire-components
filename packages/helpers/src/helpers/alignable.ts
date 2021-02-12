@@ -6,4 +6,4 @@ const align = {
   stretch: 'align-stretch'
 }
 
-export const isAlignable = (type) => align[type] ? [align[type]] : []
+export const isAlignable = (type) => align[type]
