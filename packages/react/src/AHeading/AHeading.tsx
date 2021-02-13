@@ -14,7 +14,7 @@ const AHeading: React.FC<AHeadingProps> = (props) => {
     isAlignable(props.align),
   ]
 
-  return <div className={clsx(props.className, classList)}>{props.children}</div>
+  return <h1 className={clsx(props.className, classList)}>{props.children}</h1>
 }
 
 export default AHeading
