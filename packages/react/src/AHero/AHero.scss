@@ -1,0 +1,19 @@
+:root {
+ --AHero-background: #101010;
+ --AHero-color: #f5f5f5;
+ --AHero-padding: 16px 32px;
+ --AHero-display: flex;
+ --AHero-justify: flex-start;
+ --AHero-align: center;
+ --AHero-width: 100%;
+}
+.a-hero {
+  display: var(--AHero-display);
+  justify-content: var(--AHero-justify);
+  align-items: var(--AHero-align);
+  padding: var(--AHero-padding);
+  background: var(--AHero-background);
+  color: var(--AHero-color);
+  width: var(--AHero-width);
+  height: calc(100vh - var(--ANav-height));
+}
