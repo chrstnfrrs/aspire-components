@@ -1,6 +1,19 @@
-.a-container {
-  background: #f3f3f3;
-  color: rgba(2, 94, 186, 0.267)23;
-  padding: 4px 8px;
-  display: flex;
+:root {
+ --ANav-background: #101010;
+ --ANav-color: #f5f5f5;
+ --ANav-padding: 16px 32px;
+ --ANav-display: flex;
+ --ANav-justify: flex-start;
+ --ANav-align: center;
+ --ANav-width: 100%;
+ --ANav-height: 64px;
+}
+.a-nav {
+  display: var(--ANav-display);
+  justify-content: var(--ANav-justify);
+  align-items: var(--ANav-align);
+  padding: var(--ANav-padding);
+  background: var(--ANav-background);
+  color: var(--ANav-color);
+  width: var(--ANav-width);
 }
