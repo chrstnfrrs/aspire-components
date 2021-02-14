@@ -29,7 +29,7 @@
     "@babel/preset-react": "^7.12.10",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
-    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@types/jest": "^26.0.20",
     "aspire-components-helpers": "^1.0.4",
