@@ -30,7 +30,7 @@ const AHeading: React.FC<AHeadingProps> = (props) => {
     isAlignable(props.align),
   ]
 
-  const Component = AHeaderTypeMap[props.as] || H1
+  const Component = AHeaderTypeMap[props.as] || AH1
 
   return <Component className={clsx(props.className, classList)}>{props.children}</Component>
 }
