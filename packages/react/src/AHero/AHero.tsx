@@ -14,7 +14,16 @@ const AHero: React.FC<AHeroProps> = (props) => {
     isAlignable(props.align),
   ]
 
-  return <div className={clsx(props.className, classList)}>{props.children}</div>
+  let styles = {}
+
+  if (props.backgroundImage) {
+    styles = {
+      ...styles,
+      background: `url(${props.backgroundImage}) no-repeat center center scroll`
+    }
+  }
+
+  return <div className={clsx(props.className, classList)} style={styles}>{props.children}</div>
 }
 
 export default AHero
