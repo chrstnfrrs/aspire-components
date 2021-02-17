@@ -1,8 +1,10 @@
 .a-section {
   --ASection-background: var(--A-background);
   --ASection-color: var(--A-color);
+  --ASection-direction: column;
   background: var(--ASection-background);
   color: var(--ASection-color);
   padding: 4px 8px;
   display: flex;
+  flex-direction: var(--ASection-direction);
 }
