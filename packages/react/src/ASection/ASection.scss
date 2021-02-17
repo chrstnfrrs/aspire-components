@@ -1,6 +1,8 @@
 .a-section {
-  background: #f3f3f3;
-  color: rgba(2, 94, 186, 0.267)23;
+  --ASection-background: var(--A-background);
+  --ASection-color: var(--A-color);
+  background: var(--ASection-background);
+  color: var(--ASection-color);
   padding: 4px 8px;
   display: flex;
 }
