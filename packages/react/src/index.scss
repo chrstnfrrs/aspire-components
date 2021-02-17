@@ -1,16 +1,62 @@
-.col {
-  flex-direction: column;
-}
-
 :root {
   --A-background: #f5f5f5;
+  --A-color: #101010;
+}
+
+h1 {
   --A-h1-font-size: 6rem;
-  --A-h1-letter-spacing: -1.5px;
   --A-h1-font-weight: 300;
+  --A-h1-letter-spacing: -1.5px;
+  font-size: var(--A-h1-font-size);
+  font-weight: var(--A-h1-font-weight);
+  letter-spacing: var(--A-h1-letter-spacing);
+}
+
+h2 {
   --A-h2-font-size: 3.75rem;
-  --A-h2-letter-spacing: -0.5px;
   --A-h2-font-weight: 300;
+  --A-h2-letter-spacing: -0.5px;
+  font-size: var(--A-h2-font-size);
+  font-weight: var(--A-h2-font-weight);
+  letter-spacing: var(--A-h2-letter-spacing);
+}
+
+h3 {
   --A-h3-font-size: 3rem;
-  --A-h3-letter-spacing: 0px;
   --A-h3-font-weight: 400;
+  --A-h3-letter-spacing: 0;
+  font-size: var(--A-h3-font-size);
+  font-weight: var(--A-h3-font-weight);
+  letter-spacing: var(--A-h3-letter-spacing);
+}
+
+h4 {
+  --A-h4-font-size: 2.125rem;
+  --A-h4-font-weight: 400;
+  --A-h4-letter-spacing: 0.25px;
+  font-size: var(--A-h4-font-size);
+  font-weight: var(--A-h4-font-weight);
+  letter-spacing: var(--A-h4-letter-spacing);
+}
+
+h5 {
+  --A-h5-font-size: 1.5rem;
+  --A-h5-font-weight: 400;
+  --A-h5-letter-spacing: 0;
+  font-size: var(--A-h5-font-size);
+  font-weight: var(--A-h5-font-weight);
+  letter-spacing: var(--A-h5-letter-spacing);
+}
+
+h6 {
+  --A-h6-font-size: 1.25rem;
+  --A-h6-font-weight: 500;
+  --A-h6-letter-spacing: 0.15px;
+  font-size: var(--A-h6-font-size);
+  font-weight: var(--A-h6-font-weight);
+  letter-spacing: var(--A-h6-letter-spacing);
+}
+
+.col {
+  flex-direction: column;
 }
