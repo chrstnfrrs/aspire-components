@@ -10,6 +10,7 @@ import './AContainer.scss'
 const AContainer: React.FC<AContainerProps> = (props) => {
   const classList = [
     'a-container',
+    props.col && 'col',
     isJustifiable(props.justify),
     isAlignable(props.align),
   ]
