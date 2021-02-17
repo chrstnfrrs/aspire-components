@@ -3,8 +3,13 @@
   
   // AHeading subtitle-1
   --A-subtitle-1-font-size: 1rem;
-  --A-subtitle-1-letter-spacing: 0.15px;
   --A-subtitle-1-font-weight: 400;
+  --A-subtitle-1-letter-spacing: 0.15px;
+  
+  // AHeading subtitle-2
+  --A-subtitle-2-font-size: .875rem;
+  --A-subtitle-2-font-weight: 500;
+  --A-subtitle-2-letter-spacing: 0.1px;
 }
 
 .a-heading {
@@ -13,27 +18,32 @@
 
 h1 {
   font-size: var(--A-h1-font-size);
-  letter-spacing: var(--A-h1-letter-spacing);
   font-weight: var(--A-h1-font-weight);
+  letter-spacing: var(--A-h1-letter-spacing);
 }
 
 h2 {
   font-size: var(--A-h2-font-size);
-  letter-spacing: var(--A-h2-letter-spacing);
   font-weight: var(--A-h2-font-weight);
+  letter-spacing: var(--A-h2-letter-spacing);
 }
 
 h3 {
   font-size: var(--A-h3-font-size);
-  letter-spacing: var(--A-h3-letter-spacing);
   font-weight: var(--A-h3-font-weight);
+  letter-spacing: var(--A-h3-letter-spacing);
 }
 
 
 .a-heading {
   & .a-subtitle-1 {
     font-size: var(--A-subtitle-1-font-size);
-    letter-spacing: var(--A-subtitle-1-letter-spacing);
     font-weight: var(--A-subtitle-1-font-weight);
+    letter-spacing: var(--A-subtitle-1-letter-spacing);
+  }
+  & .a-subtitle-2 {
+    font-size: var(--A-subtitle-2-font-size);
+    font-weight: var(--A-subtitle-2-font-weight);
+    letter-spacing: var(--A-subtitle-2-letter-spacing);
   }
 }
