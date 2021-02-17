@@ -3,4 +3,5 @@ export interface AHeadingProps {
   as?: String,
   className?: String,
   justify?: String,
+  type?: String,
 }
