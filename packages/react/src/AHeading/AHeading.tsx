@@ -13,6 +13,8 @@ const AH3 = (props) => <h3 className={props.className}>{props.children}</h3>
 const AH4 = (props) => <h4 className={props.className}>{props.children}</h4>
 const AH5 = (props) => <h5 className={props.className}>{props.children}</h5>
 const AH6 = (props) => <h6 className={props.className}>{props.children}</h6>
+const ASubtitle1 = (props) => <strong className={props.className}>{props.children}</strong>
+const ASubtitle2 = (props) => <strong className={props.className}>{props.children}</strong>
 
 const AHeaderTypeMap = {
   h1: AH1,
@@ -21,6 +23,8 @@ const AHeaderTypeMap = {
   h4: AH4,
   h5: AH5,
   h6: AH6,
+  ['subtitle-1']: ASubtitle1,
+  ['subtitle-2']: ASubtitle2,
 }
 
 const AHeading: React.FC<AHeadingProps> = (props) => {
