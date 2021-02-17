@@ -1,13 +1,5 @@
 :root {
   --AHeading-color: #101010;
-  // AHeading H2
-  --AHeading-font-size-h2: 3.75rem;
-  --AHeading-letter-spacing-h2: -0.5px;
-  --AHeading-font-weight-h2: 300;
-  // AHeading H3
-  --AHeading-font-size-h3: 3rem;
-  --AHeading-letter-spacing-h3: 0px;
-  --AHeading-font-weight-h3: 400;
   // AHeading subtitle-1
   --AHeading-font-size-subtitle-1: 1rem;
   --AHeading-letter-spacing-subtitle-1: 0.15px;
@@ -25,15 +17,15 @@ h1 {
 }
 
 h2 {
-  font-size: var(--AHeading-font-size-h2);
-  letter-spacing: var(--AHeading-letter-spacing-h2);
-  font-weight: var(--AHeading-font-weight-h2);
+  font-size: var(--A-h2-font-size);
+  letter-spacing: var(--A-h2-letter-spacing);
+  font-weight: var(--A-h2-font-weight);
 }
 
 h3 {
-  font-size: var(--AHeading-font-size-h3);
-  letter-spacing: var(--AHeading-letter-spacing-h3);
-  font-weight: var(--AHeading-font-weight-h3);
+  font-size: var(--A-h3-font-size);
+  letter-spacing: var(--A-h3-letter-spacing);
+  font-weight: var(--A-h3-font-weight);
 }
 
 
