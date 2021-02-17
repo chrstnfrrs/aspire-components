@@ -1,3 +1,4 @@
+import './index.scss'
 import ABtn from './ABtn/ABtn'
 import AContainer from './AContainer/AContainer'
 import AHeader from './AHeader/AHeader'
