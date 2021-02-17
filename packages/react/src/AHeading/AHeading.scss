@@ -1,9 +1,10 @@
 :root {
   --AHeading-color: #101010;
+  
   // AHeading subtitle-1
-  --AHeading-font-size-subtitle-1: 1rem;
-  --AHeading-letter-spacing-subtitle-1: 0.15px;
-  --AHeading-font-weight-subtitle-1: 400;
+  --A-subtitle-1-font-size: 1rem;
+  --A-subtitle-1-letter-spacing: 0.15px;
+  --A-subtitle-1-font-weight: 400;
 }
 
 .a-heading {
@@ -31,8 +32,8 @@ h3 {
 
 .a-heading {
   & .a-subtitle-1 {
-    font-size: var(--AHeading-font-size-subtitle-1);
-    letter-spacing: var(--AHeading-letter-spacing-subtitle-1);
-    font-weight: var(--AHeading-font-weight-subtitle-1);
+    font-size: var(--A-subtitle-1-font-size);
+    letter-spacing: var(--A-subtitle-1-letter-spacing);
+    font-weight: var(--A-subtitle-1-font-weight);
   }
 }
