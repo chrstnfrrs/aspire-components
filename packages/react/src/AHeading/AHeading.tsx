@@ -17,6 +17,17 @@ const ASubtitle1 = (props) => <strong className={props.className}>{props.childre
 const ASubtitle2 = (props) => <strong className={props.className}>{props.children}</strong>
 
 const AHeaderTypeMap = {
+  h1: AH1,
+  h2: AH2,
+  h3: AH3,
+  h4: AH4,
+  h5: AH5,
+  h6: AH6,
+  ['subtitle-1']: ASubtitle1,
+  ['subtitle-2']: ASubtitle2,
+}
+
+const AHeaderStyleMap = {
   h1: 'a-h1',
   h2: 'a-h2',
   h3: 'a-h3',
@@ -41,8 +52,7 @@ const AHeading: React.FC<AHeadingProps> = (props) => {
     'a-heading',
     isJustifiable(props.justify),
     isAlignable(props.align),
-    getSubstitleClasses(props.type),
-    AHeaderTypeMap[props.as],
+    AHeaderStyleMap[props.as] || getSubstitleClasses(props.type),
   ]
 
   const Component = AHeaderTypeMap[props.type] || AH1
