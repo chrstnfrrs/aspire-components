@@ -35,15 +35,13 @@ h3 {
 }
 
 
-.a-heading {
-  & .a-subtitle-1 {
-    font-size: var(--A-subtitle-1-font-size);
-    font-weight: var(--A-subtitle-1-font-weight);
-    letter-spacing: var(--A-subtitle-1-letter-spacing);
-  }
-  & .a-subtitle-2 {
-    font-size: var(--A-subtitle-2-font-size);
-    font-weight: var(--A-subtitle-2-font-weight);
-    letter-spacing: var(--A-subtitle-2-letter-spacing);
-  }
+.a-subtitle-1 {
+  font-size: var(--A-subtitle-1-font-size);
+  font-weight: var(--A-subtitle-1-font-weight);
+  letter-spacing: var(--A-subtitle-1-letter-spacing);
+}
+.a-subtitle-2 {
+  font-size: var(--A-subtitle-2-font-size);
+  font-weight: var(--A-subtitle-2-font-weight);
+  letter-spacing: var(--A-subtitle-2-letter-spacing);
 }

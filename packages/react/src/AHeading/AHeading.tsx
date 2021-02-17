@@ -13,8 +13,8 @@ const AH3 = (props) => <h3 className={props.className}>{props.children}</h3>
 const AH4 = (props) => <h4 className={props.className}>{props.children}</h4>
 const AH5 = (props) => <h5 className={props.className}>{props.children}</h5>
 const AH6 = (props) => <h6 className={props.className}>{props.children}</h6>
-const ASubtitle1 = (props) => <strong className={props.className}>{props.children}</strong>
-const ASubtitle2 = (props) => <strong className={props.className}>{props.children}</strong>
+const ASubtitle1 = (props) => <strong className={`${props.className} a-subtitle-1`}>{props.children}</strong>
+const ASubtitle2 = (props) => <strong className={`${props.className} a-subtitle-2`}>{props.children}</strong>
 
 const AHeaderTypeMap = {
   h1: AH1,
