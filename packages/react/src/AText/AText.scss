@@ -1,7 +1,49 @@
-:root {
-  --AText-color: #101010;
+.a-text {
+  --AText-color: var(--A-color);
+  color: var(--AText-color);
 }
 
-.a-text {
-  color: var(--AText-color);
+.a-text--body-1 {
+  --A-text--body-1-font-size: 1rem;
+  --A-text--body-1-font-weight: 400;
+  --A-text--body-1-letter-spacing: 0.5px;
+  font-size: var(--A-text--body-1-font-size);
+  font-weight: var(--A-text--body-1-font-weight);
+  letter-spacing: var(--A-text--body-1-letter-spacing);
+}
+
+.a-text--body-2 {
+  --A-text--body-2-font-size: 0.875rem;
+  --A-text--body-2-font-weight: 400;
+  --A-text--body-2-letter-spacing: 0.25px;
+  font-size: var(--A-text--body-2-font-size);
+  font-weight: var(--A-text--body-2-font-weight);
+  letter-spacing: var(--A-text--body-2-letter-spacing);
+}
+
+.a-text--button {
+  --A-text--button-font-size: 0.875rem;
+  --A-text--button-font-weight: 500;
+  --A-text--button-letter-spacing: 1.25px;
+  font-size: var(--A-text--button-font-size);
+  font-weight: var(--A-text--button-font-weight);
+  letter-spacing: var(--A-text--button-letter-spacing);
+}
+
+.a-text--caption {
+  --A-text--caption-font-size: 0.75rem;
+  --A-text--caption-font-weight: 400;
+  --A-text--caption-letter-spacing: 0.4px;
+  font-size: var(--A-text--caption-font-size);
+  font-weight: var(--A-text--caption-font-weight);
+  letter-spacing: var(--A-text--caption-letter-spacing);
+}
+
+.a-text--overline {
+  --A-text--overline-font-size: 0.625rem;
+  --A-text--overline-font-weight: 400;
+  --A-text--overline-letter-spacing: 1.5px;
+  font-size: var(--A-text--overline-font-size);
+  font-weight: var(--A-text--overline-font-weight);
+  letter-spacing: var(--A-text--overline-letter-spacing);
 }
