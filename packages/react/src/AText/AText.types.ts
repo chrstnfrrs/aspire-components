@@ -3,4 +3,5 @@ export interface ATextProps {
   as?: String,
   className?: String,
   justify?: String,
+  type?: String,
 }
