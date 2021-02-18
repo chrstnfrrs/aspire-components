@@ -6,6 +6,7 @@ import AHeading from './AHeading/AHeading'
 import AHero from './AHero/AHero'
 import ANav from './ANav/ANav'
 import ASection from './ASection/ASection'
+import AText from './AText/AText'
 
 export { 
   ABtn,
@@ -15,4 +16,5 @@ export {
   AHero,
   ANav,
   ASection,
+  AText,
 }
