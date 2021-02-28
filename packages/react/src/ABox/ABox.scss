@@ -1,0 +1,9 @@
+.a-box {
+  --ABox-padding: 8px 16px;
+  background: var(--A-background);
+  color: var(--A-color);
+  padding: var(--ABox-padding);
+  display: flex;
+  flex-direction: column;
+  width: 1024px;
+}
