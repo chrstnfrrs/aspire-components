@@ -43,7 +43,7 @@ const AHeader: React.FC<AInputProps> = (props) => {
   return (
     <>
       {props.label && <label>{props.label}</label>}
-      <input className={clsx(props.className, classList)} type={type} {...optionalProps} />
+      <input className={clsx(props.className, classList)} type={type} onChange={props.onChange} {...optionalProps} />
     </>
   )
 }
