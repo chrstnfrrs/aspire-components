@@ -7,11 +7,20 @@ import 'aspire-components-scss/build/index.scss'
 import { AHeroProps } from './AHero.types'
 import './AHero.scss'
 
+const heightMap = {
+  100: '100vh',
+  50: '50vh',
+  75: '75vh',
+}
+
+const setHeight = (height) => heightMap[height];
+
 const AHero: React.FC<AHeroProps> = (props) => {
   const classList = [
     'a-hero',
     isJustifiable(props.justify),
     isAlignable(props.align),
+    setHeight(props.height),
   ]
 
   let styles = {}
