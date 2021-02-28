@@ -6,6 +6,10 @@ import postcss from "rollup-plugin-postcss";
 
 const packageJson = require("./package.json");
 
+const globals = {
+  ...packageJson.devDependencies,
+};
+
 export default {
   input: "src/index.ts",
   output: [
@@ -25,6 +29,11 @@ export default {
     resolve(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
-    postcss()
-  ]
+    postcss(),
+    commonjs({
+      exclude: 'node_modules',
+      ignoreGlobal: true,
+    }),
+  ],
+  external: Object.keys(globals),
 };
