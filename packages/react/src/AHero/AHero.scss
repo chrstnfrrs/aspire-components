@@ -6,6 +6,7 @@
  --AHero-justify: flex-start;
  --AHero-align: center;
  --AHero-width: 100%;
+ --ANav-height: 64px;
 }
 .a-hero {
   display: var(--AHero-display);
@@ -15,5 +16,15 @@
   background: var(--AHero-background);
   color: var(--AHero-color);
   width: var(--AHero-width);
-  height: calc(100vh - var(--ANav-height));
+  height: 100vh;
+}
+
+.h100 {
+  height: 100vh;
+}
+.h50 {
+  height: 50vh;
+}
+.h75 {
+  height: 75vh;
 }
