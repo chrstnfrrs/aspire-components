@@ -56,3 +56,48 @@ h6 {
   font-weight: var(--A-h6-font-weight);
   letter-spacing: var(--A-h6-letter-spacing);
 }
+
+
+// WEIGHTS
+.a-weight--regular {
+  font-weight: 400;
+}
+
+.a-weight--medium {
+  font-weight: 500;
+}
+
+.a-weight--semi-bold {
+  font-weight: 600;
+}
+
+.a-weight--bold {
+  font-weight: 700;
+}
+
+// SIZES
+.a-size--12 {
+  font-size: 0.75rem;
+}
+
+.a-size--14 {
+  font-size: 0.875rem;
+}
+
+.a-size--16 {
+  font-size: 1rem;
+}
+
+.a-size--20 {
+  font-size: 1.25rem;
+}
+
+// DECORATORS
+.a-underline {
+  text-decoration: underline;
+}
+
+// Widths
+.a-width--512 {
+  width: 512px;
+}
