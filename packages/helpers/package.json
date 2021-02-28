@@ -1,6 +1,6 @@
 {
   "name": "aspire-components-helpers",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "Aspire Components Helper Functions",
   "author": "chrstnfrrs",
   "license": "MIT",
@@ -12,7 +12,7 @@
   ],
   "source": "src/index.js",
   "engines": {
-    "node": ">=14"
+    "node": ">=12"
   },
   "scripts": {
     "build": "rollup -c",
